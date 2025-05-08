@@ -9,7 +9,7 @@ import testBase.BaseClass;
 public class TC001_AccountRegistrationTest extends BaseClass {
 	// public WebDriver driver;
 
-	@Test
+	@Test(groups={"Regression","Master"})
 	public void verify_account_registration() {
 		logger.info("******Starting TC001_AccountRegistrationTest******* ");
 		try {

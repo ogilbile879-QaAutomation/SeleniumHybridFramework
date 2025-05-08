@@ -18,6 +18,9 @@ WebElement MyAccountLnk;
 
 @FindBy(xpath="//a[text()=\"Register\"]")
 WebElement RegisterLnk;
+
+@FindBy(xpath="//li[@class=\"dropdown open\"]//a[text()=\"Login\"]")
+WebElement linkLogin;
 	
 public void clickMyAccount() {
 	MyAccountLnk.click();
@@ -25,5 +28,9 @@ public void clickMyAccount() {
 
 public void clickRegisterLnk() {
 	RegisterLnk.click();
+}
+
+public void clickLoginLnk() {
+	linkLogin.click();
 }
 }
